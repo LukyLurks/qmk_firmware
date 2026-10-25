@@ -334,7 +334,7 @@ void EVENT_USB_Device_StartOfFrame(void) {
  * it is safe to use single bank for all endpoints.
  */
 void EVENT_USB_Device_ConfigurationChanged(void) {
-    bool ConfigSuccess = true;
+    [[maybe_unused]] bool ConfigSuccess = true;
 
 #ifndef KEYBOARD_SHARED_EP
     /* Setup keyboard report endpoint */
